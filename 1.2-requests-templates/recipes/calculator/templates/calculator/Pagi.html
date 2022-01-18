@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<p>Выберите блюдо</p>
+<p></p>
+{% for elem in page %}
+<li>
+    <a href='http://127.0.0.1:8000/{{ elem }}'>{{ elem }}</a>
+</li>
+{% endfor %}
+</body>
+</html>
