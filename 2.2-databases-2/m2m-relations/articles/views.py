@@ -6,12 +6,7 @@ from articles.models import Article, Tag, ArticleScope
 def articles_list(request):
     template = 'articles/news.html'
     articleObjects = Article.objects.all()
-    scopeObjects = ArticleScope.objects.all()
-    print()
-    print(scopeObjects)
-    print()
     context = {
-        # 'scope': scopeObjects,
         'object_list': articleObjects,
     }
 
